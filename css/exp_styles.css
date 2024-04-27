@@ -1,0 +1,107 @@
+
+.experience {
+    background-image: url('/image/space_man.gif');
+    /* Replace 'your-image.jpg' with your background image */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    /* Adjust padding as needed */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Courier New, monospace;
+    color: orange;
+    /* Adjust text color */
+    transition: background-color 0.5s ease;
+}
+
+.experience:hover {
+    background-color: rgba(255, 165, 0, 0.8);
+    /* Change background color on hover */
+}
+
+
+.section-title {
+    font-size: 36px;
+    /* Increase font size */
+    color: orangered;
+    /* Text color */
+    background-color: transparent;
+    /* Background color */
+    padding: 10px 20px;
+    /* Padding around the text */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Box shadow */
+    display: inline-block;
+    /* Display as inline-block to fit content */
+    margin-bottom: 20px;
+    /* Margin at the bottom */
+    transition: color 0.5s ease;
+}
+
+.section-title:hover {
+    color: orange;
+    /* Change section title color on hover */
+}
+.section-title:hover {
+    transform: scale(1.1);
+    /* Scale up on hover */
+}
+
+.section-title:hover {
+    transition: transform 0.3s ease;
+}
+.job-title {
+    cursor: pointer;
+    color: orange;
+    /* Adjust job title color */
+    font-size: 20px;
+    margin-bottom: 10px;
+    transition: color 0.5s ease;
+    /* Add transition for color change */
+}
+
+.job-title:hover {
+    color: #ffffff;
+    /* Change job title color on hover */
+}
+
+.job-details {
+    color: orange;
+    /* Adjust job details text color */
+    margin-bottom: 10px;
+    transition: color 0.5s ease;
+    /* Add transition for color change */
+}
+
+.job-details:hover {
+    color: #ffffff;
+    /* Change job details text color on hover */
+}
+
+.experience-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experience-item {
+    margin-bottom: 30px;
+}
+
+.job-description {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust background color and opacity */
+    padding: 20px;
+    margin-top: 20px;
+    transition: background-color 0.5s ease;
+    /* Add transition for background color change */
+}
+
+.job-description:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Change background color on hover */
+}

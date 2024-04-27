@@ -1,0 +1,70 @@
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    font-family: Courier New, monospace;
+    animation: glow 2s infinite alternate;
+    /* Apply the glow animation*/
+}
+.container h1 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 50px;
+    color: #333;
+}
+
+.container h1:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.education {
+    margin-bottom: 30px;
+}
+
+.education h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.education p {
+    margin: 0;
+    font-size: 18px;
+    color: #666;
+}
+
+.education:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.middle-right-image {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    transform: none;
+    width: 300px;
+    /* Adjust width as needed */
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #ff00cc, #3333ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        /* Initial glow color */
+    }
+
+    100% {
+        box-shadow: 0 0 20px rgba(0, 255, 255, 1);
+        /* Final glow color */
+    }
+}

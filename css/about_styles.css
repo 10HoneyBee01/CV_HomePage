@@ -1,0 +1,50 @@
+/* Custom Styles with Animations */
+/* Custom Styles with Animations */
+#about {
+    background: linear-gradient(135deg, #2ecc71, #82e0aa);
+    /* Green gradient */
+    /* Add a different gradient background color */
+    width: auto;
+    /* Set width to auto to adjust based on content */
+    max-height: 100%;
+    /* Set max-height to 100% to prevent overflow */
+    overflow: auto;
+    /* Add overflow auto to allow scrolling when content exceeds container height */
+    border-radius: 20px;
+    /* Add rounded edges */
+    padding: 20px;
+    text-align: center;
+    color: #36454F;
+    font-family: Courier New, monospace;
+    /* Set the font family to Courier New */
+    animation: slideInFromLeft 3s ease-in-out;
+}
+
+#about h2 {
+    font-size: 40px;
+    background-color: transparent;
+    padding: 20px 0;
+}
+
+#about h2:hover,
+#about p:hover {
+    transform: scale(1.1);
+    /* Scale up on hover */
+    transition: transform 0.3s ease;
+}
+
+#about-content p {
+    color: #36454F;
+    padding: 5px 0;
+}
+
+/* Animated CSS */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

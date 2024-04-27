@@ -1,0 +1,23 @@
+.illustration-left,
+.illustration-right {
+    position: fixed;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    /* Adjust height as needed */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.illustration-left {
+    left: 0;
+    background-image: url('/image/8aekymbu.png');
+    /* Adjust path to your image */
+}
+
+.illustration-right {
+    right: 0;
+    background-image: url('/image/lhoui0mk.png');
+    /* Adjust path to your image */
+}

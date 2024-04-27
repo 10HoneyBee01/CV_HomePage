@@ -1,0 +1,116 @@
+@keyframes gradient-change {
+    0% {
+        background: linear-gradient(45deg, #ff6666, #66ff66);
+    }
+
+    /* Start with a red to green gradient */
+    25% {
+        background: linear-gradient(45deg, #ff6666, #66ff66);
+    }
+
+    /* Stay at green at 25% */
+    50% {
+        background: linear-gradient(45deg, #66ff66, #6666ff);
+    }
+
+    /* Transition to a green to blue gradient at 50% */
+    75% {
+        background: linear-gradient(45deg, #6666ff, #ff6666);
+    }
+
+    /* Transition to a blue to red gradient at 75% */
+    100% {
+        background: linear-gradient(45deg, #ff6666, #66ff66);
+    }
+
+    /* End with a red to green gradient */
+}
+
+.container2 {
+    width: 80%;
+    margin: 50px auto;
+    background: linear-gradient(45deg, #ff6666, #66ff66);
+    /* Initial gradient background */
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    font-family: Courier New, monospace;
+    animation: glow 2s infinite alternate, gradient-change 10s infinite;
+    /* Apply the glow animation and gradient-change animation */
+}
+
+
+#skills h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#skills h2:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+
+.column h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: mediumspringgreen;
+}
+
+.column h3:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add this CSS to your existing stylesheet */
+.column ul li button {
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Add transition for glow effect */
+    font-size: 15px;
+    /* Set font size */
+    font-weight: bold;
+    /* Make text bold */
+}
+
+.column ul li button:hover {
+    background-color: #ff00cc;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 0, 204, 0.5);
+    /* Add glow effect */
+    -webkit-box-shadow: 0 0 10px rgba(255, 0, 204, 0.5);
+    /* For Safari */
+    -moz-box-shadow: 0 0 10px rgba(255, 0, 204, 0.5);
+    /* For Firefox */
+    -o-box-shadow: 0 0 10px rgba(255, 0, 204, 0.5);
+    /* For Opera */
+}
+
+.image {
+    position: absolute;
+    top: 65%;
+    right: 35%;
+    transform: none;
+    width: 210px;
+    /* Adjust width as needed */
+}

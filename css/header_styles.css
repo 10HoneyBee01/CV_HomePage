@@ -1,0 +1,99 @@
+/*body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}*/
+
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url(/image/animated_0000004260.gif);
+}
+
+.container {
+    position: relative;
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    color: #36454F;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Courier New, monospace;
+    /* Set the font family to Courier New */
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.pop-up img {
+    vertical-align: middle;
+    /* Align the image vertically with the adjacent text */
+    margin-right: 5px;
+    /* Adjust the right margin as needed */
+    width: 30px;
+    /* Adjust the width of the image */
+    height: auto;
+    /* Maintain the aspect ratio of the image */
+    image-rendering: smooth;
+}
+
+.pop-up img[src="image/rocket (1).gif"] {
+    width: 100px;
+    /* Set the desired width */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+.container {
+    position: relative;
+}
+
+.pop-up {
+    transition: transform 0.3s ease;
+}
+
+.pop-up:hover {
+    transform: scale(1.1);
+}
+.pop-up a {
+    text-decoration: none;
+    /* Remove underline */
+    color: #36454F;
+}
+
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}

@@ -1,0 +1,188 @@
+/* Footer Styles */
+footer {
+    margin-top: 30px;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #ffffff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: Courier New,monospace;
+    animation: glow 2s infinite alternate;
+}
+
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease;
+    /* Add transition for smooth color change */
+}
+
+.footer-section:hover {
+    border-radius: 10px;
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Change to a slightly transparent black color */
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 40px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Add transition for smooth color and box-shadow change */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    /* Initially, no shadow */
+}
+
+.footer-section:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Change to a slightly transparent black color */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* Add a glowing effect with a larger shadow */
+}
+
+
+.footer-section h2 {
+    font-size:20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    /* Add transition for smooth color change */
+}
+
+.footer-section ul li a:hover {
+    color: #55acee;
+    /* Change to the color of your choice */
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+    /* Add transition for smooth color change */
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
+
+.social-media-icons {
+    display: flex;
+}
+
+.social-media-icons .social-icon {
+    margin-right: 10px;
+}
+
+.social-media-icons .social-icon:last-child {
+    margin-right: 0;
+}
+
+.social-media-icons .social-icon i {
+    font-size: 20px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    /* Add transition for smooth color change */
+}
+
+.social-media-icons .social-icon i:hover {
+    color: #55acee;
+    /* Change to the color of your choice */
+}
+
+/* Keyframe animation for the underline loading effect */
+@keyframes underline {
+    0% {
+        width: 0;
+    }
+
+    /* Start with no width */
+    100% {
+        width: 100%;
+    }
+
+    /* End with full width */
+}
+
+/* Apply the underline animation to the h2 element */
+.underline-animation {
+    position: relative;
+    /* Set position to relative */
+}
+
+/* Create the animated underline */
+.underline-animation::after {
+    content: '';
+    /* Create a pseudo-element */
+    position: absolute;
+    /* Position it absolutely */
+    left: 0;
+    /* Align it to the left of the h2 element */
+    bottom: 0;
+    /* Align it to the bottom of the h2 element */
+    height: 2px;
+    /* Set the height of the underline */
+    background-color: #55acee;
+    /* Set the color of the underline */
+    animation: underline 5s ease-in-out infinite alternate;
+    /* Apply the animation */
+}
+
+/* Apply gradient effect to the text */
+.colorful-text {
+    background-image: linear-gradient(45deg, #ff8a00, #e52e71, #9b2bb6, #3b5998, #00acee, #00aced);
+    -webkit-background-clip: text;
+    /* Clip the text to the background shape */
+    -webkit-text-fill-color: transparent;
+    /* Make the text transparent */
+}
+/* Apply gradient effect to the text */
+.colorful-text1 {
+    background-image: linear-gradient(to right, #ff5f6d, #ffc371);
+    /* Gradient from pink to orange */
+    -webkit-background-clip: text;
+    /* Clip the text to the background shape */
+    -webkit-text-fill-color: transparent;
+    /* Make the text transparent */
+}
+/* Apply gradient effect to the text */
+.colorful-text2 {
+    background-image: linear-gradient(45deg, #fc5c7d, #6a82fb);
+    /* Gradient from pink to blue */
+    -webkit-background-clip: text;
+    /* Clip the text to the background shape */
+    -webkit-text-fill-color: transparent;
+    /* Make the text transparent */
+}
+
