@@ -38,6 +38,10 @@
     padding: 5px 0;
 }
 
+.image2{
+    border-radius: 10%;
+}
+
 /* Animated CSS */
 @keyframes slideInFromLeft {
     0% {
