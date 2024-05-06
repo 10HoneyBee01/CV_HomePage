@@ -10,6 +10,7 @@
     animation: glow 2s infinite alternate;
     /* Apply the glow animation*/
 }
+
 .container h1 {
     text-align: center;
     margin-top: 0;
@@ -57,6 +58,7 @@
     -webkit-background-clip: text;
     color: transparent;
 }
+
 @keyframes glow {
     0% {
         box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
@@ -66,5 +68,43 @@
     100% {
         box-shadow: 0 0 20px rgba(0, 255, 255, 1);
         /* Final glow color */
+    }
+}
+
+/* Media queries for responsiveness */
+
+/* Adjust layout for screens smaller than 768px */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        /* Adjusted width for smaller screens */
+    }
+
+    .middle-right-image {
+        display: none;
+        /* Hide image on smaller screens */
+    }
+}
+
+/* Adjust layout for screens smaller than 576px */
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+        /* Adjusted padding for smaller screens */
+    }
+
+    .container h1 {
+        font-size: 40px;
+        /* Adjusted font size for smaller screens */
+    }
+
+    .education h2 {
+        font-size: 20px;
+        /* Adjusted font size for smaller screens */
+    }
+
+    .education p {
+        font-size: 16px;
+        /* Adjusted font size for smaller screens */
     }
 }

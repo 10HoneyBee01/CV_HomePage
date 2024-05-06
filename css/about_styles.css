@@ -1,5 +1,4 @@
 /* Custom Styles with Animations */
-/* Custom Styles with Animations */
 #about {
     background: linear-gradient(135deg, #2ecc71, #82e0aa);
     /* Green gradient */
@@ -38,7 +37,7 @@
     padding: 5px 0;
 }
 
-.image2{
+.image2 {
     border-radius: 10%;
 }
 
@@ -50,5 +49,25 @@
 
     100% {
         transform: translateX(0);
+    }
+}
+
+/* Media queries for responsiveness */
+
+/* Adjust layout for screens smaller than 768px */
+@media (max-width: 768px) {
+    #about {
+        border-radius: 0;
+        /* Remove border-radius for smaller screens */
+        animation: none;
+        /* Remove animation for smaller screens */
+    }
+}
+
+/* Adjust layout for screens smaller than 576px */
+@media (max-width: 576px) {
+    #about h2 {
+        font-size: 30px;
+        /* Adjusted font size for smaller screens */
     }
 }

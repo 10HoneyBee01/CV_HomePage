@@ -21,3 +21,15 @@
     background-image: url('/image/lhoui0mk.png');
     /* Adjust path to your image */
 }
+
+/* Media queries for responsiveness */
+
+/* Adjust layout for screens smaller than 768px */
+@media (max-width: 768px) {
+
+    .illustration-left,
+    .illustration-right {
+        display: none;
+        /* Hide illustrations on smaller screens */
+    }
+}

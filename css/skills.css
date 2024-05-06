@@ -40,7 +40,6 @@
     /* Apply the glow animation and gradient-change animation */
 }
 
-
 #skills h2 {
     font-size: 50px;
     text-align: center;
@@ -55,22 +54,27 @@
 .columns {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    /* Ensure columns wrap properly on smaller screens */
 }
 
 .column {
     flex: 1;
     margin-right: 20px;
+    margin-bottom: 20px;
+    /* Add margin bottom for spacing between columns */
 }
 
 .column:last-child {
     margin-right: 0;
 }
 
-
 .column h3 {
     font-size: 25px;
     margin-bottom: 10px;
     color: mediumspringgreen;
+    text-align: center;
+    /* Center align column headings */
 }
 
 .column h3:hover {
@@ -91,6 +95,10 @@
     /* Set font size */
     font-weight: bold;
     /* Make text bold */
+    display: block;
+    /* Ensure buttons take full width of the column */
+    margin: 5px auto;
+    /* Center align buttons */
 }
 
 .column ul li button:hover {
@@ -113,4 +121,38 @@
     transform: none;
     width: 210px;
     /* Adjust width as needed */
+}
+
+/* Media queries for responsiveness */
+
+/* Adjust layout for screens smaller than 768px */
+@media (max-width: 768px) {
+    .container2 {
+        width: 90%;
+        /* Adjusted width for smaller screens */
+    }
+
+    .image {
+        display: none;
+        /* Hide image on smaller screens */
+    }
+}
+
+/* Adjust layout for screens smaller than 576px */
+@media (max-width: 576px) {
+    .container2 {
+        padding: 10px;
+        /* Adjusted padding for smaller screens */
+    }
+
+    .container2 h2 {
+        font-size: 40px;
+        /* Adjusted font size for smaller screens */
+    }
+
+    .column {
+        flex-basis: 100%;
+        /* Make columns take full width on smaller screens */
+        margin-right: 0;
+    }
 }

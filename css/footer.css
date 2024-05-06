@@ -2,14 +2,15 @@
 footer {
     margin-top: 30px;
     width: 100%;
-    position: absolute;
+    position: relative;
+    /* Changed from absolute to relative for proper positioning */
     background: linear-gradient(to right, #00093c, #2d0b00);
     color: #ffffff;
     padding: 100px 0 30px;
     border-top-left-radius: 125px;
     font-size: 13px;
     line-height: 20px;
-    font-family: Courier New,monospace;
+    font-family: Courier New, monospace;
     animation: glow 2s infinite alternate;
 }
 
@@ -27,8 +28,8 @@ footer {
 
 .footer-section {
     flex: 1;
-    margin-left: 10px;
-    margin-bottom: 30px;
+    margin: 0 10px 30px;
+    /* Adjusted margins for better spacing */
     transition: background-color 0.3s ease;
     /* Add transition for smooth color change */
 }
@@ -42,7 +43,6 @@ footer {
 
 .footer-section {
     flex: 1;
-    margin-right: 40px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     /* Add transition for smooth color and box-shadow change */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0);
@@ -56,9 +56,8 @@ footer {
     /* Add a glowing effect with a larger shadow */
 }
 
-
 .footer-section h2 {
-    font-size:20px;
+    font-size: 20px;
     margin-bottom: 20px;
     color: #ffffff;
 }
@@ -167,6 +166,7 @@ footer {
     -webkit-text-fill-color: transparent;
     /* Make the text transparent */
 }
+
 /* Apply gradient effect to the text */
 .colorful-text1 {
     background-image: linear-gradient(to right, #ff5f6d, #ffc371);
@@ -176,6 +176,7 @@ footer {
     -webkit-text-fill-color: transparent;
     /* Make the text transparent */
 }
+
 /* Apply gradient effect to the text */
 .colorful-text2 {
     background-image: linear-gradient(45deg, #fc5c7d, #6a82fb);
@@ -186,3 +187,27 @@ footer {
     /* Make the text transparent */
 }
 
+/* Media queries for responsiveness */
+
+/* Adjust layout for screens smaller than 768px */
+@media (max-width: 768px) {
+    footer {
+        padding: 50px 0 20px;
+        /* Adjusted padding */
+    }
+
+    .footer-section {
+        flex-basis: 100%;
+        /* Make sections take full width */
+        margin: 0 0 20px;
+        /* Adjusted margin */
+    }
+}
+
+/* Adjust layout for screens smaller than 576px */
+@media (max-width: 576px) {
+    .footer-section {
+        margin: 0;
+        /* Remove margin */
+    }
+}
